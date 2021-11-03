@@ -1,7 +1,7 @@
 ﻿
 namespace mastermind
 {
-    partial class Beginscherm
+    partial class BeginScreen
     {
         /// <summary>
         /// Required designer variable.

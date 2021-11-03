@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Beginscherm.cs">
+    <Compile Include="BeginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Beginscherm.Designer.cs">
-      <DependentUpon>Beginscherm.cs</DependentUpon>
+    <Compile Include="BeginScreen.Designer.cs">
+      <DependentUpon>BeginScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Mastermind.cs">
       <SubType>Form</SubType>
@@ -58,31 +58,31 @@
     <Compile Include="Mastermind.Designer.cs">
       <DependentUpon>Mastermind.cs</DependentUpon>
     </Compile>
-    <Compile Include="Onjuist kolom.cs">
+    <Compile Include="WrongColumn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Onjuist kolom.Designer.cs">
-      <DependentUpon>Onjuist kolom.cs</DependentUpon>
+    <Compile Include="WrongColumn.Designer.cs">
+      <DependentUpon>WrongColumn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Onjuiste integer.cs">
+    <Compile Include="WrongRow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Onjuiste integer.Designer.cs">
-      <DependentUpon>Onjuiste integer.cs</DependentUpon>
+    <Compile Include="WrongRow.Designer.cs">
+      <DependentUpon>WrongRow.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Beginscherm.resx">
-      <DependentUpon>Beginscherm.cs</DependentUpon>
+    <EmbeddedResource Include="BeginScreen.resx">
+      <DependentUpon>BeginScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mastermind.resx">
       <DependentUpon>Mastermind.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Onjuist kolom.resx">
-      <DependentUpon>Onjuist kolom.cs</DependentUpon>
+    <EmbeddedResource Include="WrongColumn.resx">
+      <DependentUpon>WrongColumn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Onjuiste integer.resx">
-      <DependentUpon>Onjuiste integer.cs</DependentUpon>
+    <EmbeddedResource Include="WrongRow.resx">
+      <DependentUpon>WrongRow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

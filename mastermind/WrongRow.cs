@@ -10,25 +10,23 @@ using System.Windows.Forms;
 
 namespace mastermind
 {
-    public partial class Onjuist_kolom : Form
+    public partial class Onjuiste_integer : Form
     {
-        public Onjuist_kolom()
+        public Onjuiste_integer()
         {
-            InitializeComponent();
-
-
+            InitializeComponent();          
         }
 
-        private void Onjuist_kolom_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var Tijd = Task.Delay(1000);
-            Tijd.Wait();
-            Beginscherm beginscherm = new Beginscherm();
+            var tijd = Task.Delay(1000);
+            tijd.Wait();
+            BeginScreen beginscherm = new BeginScreen();
             beginscherm.Show();
             this.Hide();
         }

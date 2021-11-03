@@ -16,7 +16,7 @@ namespace mastermind
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Beginscherm());
+            Application.Run(new BeginScreen());
         }
     }
 }

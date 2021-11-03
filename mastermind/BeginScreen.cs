@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace mastermind
 {
-    public partial class Beginscherm : Form
+    public partial class BeginScreen : Form
     {
        
        
-        public Beginscherm()
+        public BeginScreen()
         {
             InitializeComponent();
         }

@@ -21,7 +21,8 @@ namespace mastermind
     public partial class Mastermind : Form
     {
         private int colorIndex = 0;
-        public int MaximaalActiveRows = Beginscherm.totaalrijen - 1;
+        private bool mastermindgeladen = false;
+        public int MaximaalActiveRows = BeginScreen.totaalrijen - 1;
         public bool CanSubmit = false;
 
         public Mastermind()
@@ -29,12 +30,12 @@ namespace mastermind
             InitializeComponent();
             GenerateComputerColors();          
             
-            label1.Text = "Aantal rijen: " + Beginscherm.totaalrijen;
-            int aantalknopen = Beginscherm.totaalrijen * 4;
+            label1.Text = "Aantal rijen: " + BeginScreen.totaalrijen;
+            int aantalknopen = BeginScreen.totaalrijen * 4;
             
             int endposition = 10;
             int endpositioncheck = 1;
-            int eindpositiepanel = 70 * Beginscherm.totaalrijen + 3;
+            int eindpositiepanel = 70 * BeginScreen.totaalrijen + 3;
             int nieuwetopmargin = 2;
             int aantalbuttons = 0;
             int aantalloopsmargin = 0;
@@ -120,7 +121,7 @@ namespace mastermind
             Button[] ButtonsInTheRow = ButtonsInRow(row);
             foreach (Button button in ButtonsInTheRow)
             {
-                if (ActivRow < Beginscherm.totaalrijen)
+                if (ActivRow < BeginScreen.totaalrijen)
                 {
                     button.Enabled = true;
                 }
@@ -132,7 +133,7 @@ namespace mastermind
             Button[] ButtonsInTheRow = ButtonsInRow(row);
             foreach (Button button in ButtonsInTheRow)
             {
-                if (ActivRow < Beginscherm.totaalrijen)
+                if (ActivRow < BeginScreen.totaalrijen)
                 {
                     button.Enabled = false;
                 }
@@ -197,7 +198,7 @@ namespace mastermind
                 MessageBox.Show("Verlorenn!");
                 var tijd = Task.Delay(1000);
                 tijd.Wait();
-                Beginscherm beginscherm = new Beginscherm();
+                BeginScreen beginscherm = new BeginScreen();
                 beginscherm.Show();
                 this.Hide();
             }
@@ -241,7 +242,7 @@ namespace mastermind
         {
             var tijd = Task.Delay(1000);
             tijd.Wait();
-            Beginscherm beginscherm = new Beginscherm();
+            BeginScreen beginscherm = new BeginScreen();
             beginscherm.Show();
 
             this.Hide();
